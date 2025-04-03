@@ -10,25 +10,25 @@
             font-size: 18px;
             padding: 20px;
             transition: background-color 0.3s, color 0.3s;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        body.dark-mode {
             background-color: #1e1e1e;
             color: #ffffff;
+        }
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
         }
         .container {
             width: 800px;
             margin: 0 auto;
-            background-color: #f0f0f0;
+            background-color: #2d2d2d;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
             transition: background-color 0.3s;
         }
-        .dark-mode .container {
-            background-color: #2d2d2d;
-            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        .light-mode .container {
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         label, input, textarea {
             display: block;
@@ -39,16 +39,16 @@
             font-family: 'Microsoft JhengHei', 'Consolas', sans-serif;
             font-size: 18px;
             padding: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #555;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .dark-mode input[type="text"], .dark-mode textarea {
             background-color: #3d3d3d;
             color: #ffffff;
-            border-color: #555;
+        }
+        .light-mode input[type="text"], .light-mode textarea {
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #ccc;
         }
         textarea {
             height: 300px;
@@ -67,48 +67,46 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s;
+            transition: background-color 0.3s;
         }
         #sayButton {
-            background-color: #444; /* 暗灰色 */
+            background-color: #4a4a4a;
             color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         #sayButton:hover {
-            background-color: #555; /* 稍微亮一點的灰色 */
+            background-color: #5a5a5a;
         }
         #clearButton {
-            background-color: #333; /* 更暗的灰色 */
+            background-color: #3a3a3a;
             color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         #clearButton:hover {
-            background-color: #444; /* 稍微亮一點的灰色 */
+            background-color: #4a4a4a;
         }
-        .dark-mode #sayButton {
+        .light-mode #sayButton {
             background-color: #4a4a4a;
             color: white;
         }
-        .dark-mode #sayButton:hover {
+        .light-mode #sayButton:hover {
             background-color: #5a5a5a;
         }
-        .dark-mode #clearButton {
+        .light-mode #clearButton {
             background-color: #3a3a3a;
             color: white;
         }
-        .dark-mode #clearButton:hover {
+        .light-mode #clearButton:hover {
             background-color: #4a4a4a;
         }
         #modeToggle {
             position: absolute;
             top: 20px;
             right: 20px;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        .dark-mode #modeToggle {
             background-color: #4a4a4a;
             color: #fff;
+        }
+        .light-mode #modeToggle {
+            background-color: #f0f0f0;
+            color: #333;
         }
     </style>
 </head>
@@ -125,15 +123,15 @@
         </div>
         <textarea id="outputArea" readonly></textarea>
     </div>
-    <button id="modeToggle">切換深色模式</button>
+    <button id="modeToggle">切換淺色模式</button>
 
     <script>
         const modeToggle = document.getElementById('modeToggle');
         const body = document.body;
 
         modeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            modeToggle.textContent = body.classList.contains('dark-mode') ? '切換淺色模式' : '切換深色模式';
+            body.classList.toggle('light-mode');
+            modeToggle.textContent = body.classList.contains('light-mode') ? '切換深色模式' : '切換淺色模式';
         });
 
         document.getElementById('sayButton').addEventListener('click', function() {
