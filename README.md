@@ -21,17 +21,16 @@
    git clone https://github.com/<你的用戶名>/YouTube-SEO-Keyword-Supporter.git
 
 2. 進入專案目錄
-
 ```bash
-cd YouTube-SEO-Keyword-Supporter
+  cd YouTube-SEO-Keyword-Supporter
 
 3. 安裝所需依賴
 ```bash
-pip install wxPython
+  pip install wxPython
 
 4.運行腳本
 ```bash
-python "YouTube Keyword Supporter.py"
+  python "YouTube Keyword Supporter.py"
 
 
 ## 示例輸入與輸出
