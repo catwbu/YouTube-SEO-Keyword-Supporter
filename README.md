@@ -29,7 +29,7 @@
   ```bash
     pip install wxPython
 ```
-  4.運行腳本
+    4.運行腳本
   ```bash
     python "YouTube Keyword Supporter.py"
 ```
