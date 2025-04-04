@@ -17,19 +17,19 @@
 - **作業系統**：支援 Windows、macOS 和 Linux（需安裝 wxPython）。
 
 ## 安裝
-1. 克隆此儲存庫（或下載腳本）：
+  1. 克隆此儲存庫（或下載腳本）：
    ```bash
-   git clone https://github.com/<你的用戶名>/YouTube-SEO-Keyword-Supporter.git
+     git clone https://github.com/<你的用戶名>/YouTube-SEO-Keyword-Supporter.git
    ```
-2. 進入專案目錄
+  2. 進入專案目錄
   ```bash
-  cd YouTube-SEO-Keyword-Supporter
+    cd YouTube-SEO-Keyword-Supporter
 ```
-3. 安裝所需依賴
+  3. 安裝所需依賴
   ```bash
-  pip install wxPython
+    pip install wxPython
 ```
-4.運行腳本
+  4.運行腳本
   ```bash
     python "YouTube Keyword Supporter.py"
 ```
