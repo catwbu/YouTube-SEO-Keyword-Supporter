@@ -19,28 +19,34 @@
 1. 克隆此儲存庫（或下載腳本）：
    ```bash
    git clone https://github.com/<你的用戶名>/YouTube-SEO-Keyword-Supporter.git
+   ```
 
 2. 進入專案目錄
-```bash
+  ```bash
   cd YouTube-SEO-Keyword-Supporter
+```
 
 3. 安裝所需依賴
-```bash
+  ```bash
   pip install wxPython
+```
 
 4.運行腳本
-```bash
-  python "YouTube Keyword Supporter.py"
-
+  ```bash
+    python "YouTube Keyword Supporter.py"
+```
 
 ## 示例輸入與輸出
-輸入：
+
+### 輸入：
 第一欄：YouTube, video
 第二欄：SEO, tips
 第三欄：2023
-輸出：
+### 輸出：
+```bash
 YouTubeSEO2023,
 YouTubetips2023,
 videoSEO2023,
 videotips2023,
+```
 
