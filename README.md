@@ -54,7 +54,7 @@ videotips2023,
 ## 網頁版介紹
 除了桌面應用程式外，此工具也提供網頁版本，讓你無需安裝即可體驗關鍵字組合功能。請訪問以下連結：
 
-[YouTube SEO 關鍵字支援工具 - 網頁版](https://catwbu.github.io/YouTube-SEO-Keyword-Supporter/)
+[YouTube SEO 關鍵字支援工具 - 網頁版](https://youtube-seo-keyword.pages.dev/)
 
 網頁版同樣支援輸入三組關鍵字並生成組合，適合快速測試或在不同設備上使用。
 
